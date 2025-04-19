@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="slidetoggle">SlideToggle</button>
+    <button id="stop">Stop</button>
+
+
+    <p id="panel">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus inventore repellat eius? Eius alias atque corrupti doloribus totam dolores vero pariatur consectetur, quasi labore minima officia incidunt reprehenderit ullam nobis maxime laboriosam molestiae
+        aliquam quam hic, nesciunt quo fuga. Dignissimos consequuntur provident vitae vel voluptatem porro illo in eligendi, quaerat qui exercitationem eveniet doloribus consequatur cumque nobis doloremque libero unde facilis, architecto culpa inventore
+        praesentium dolore maxime a. Sapiente quo enim aperiam cupiditate distinctio, ipsa porro ducimus consequuntur quod, debitis sed reprehenderit omnis cum quae ex qui illum. Illum provident, eos molestiae nemo officiis voluptatem eaque odit, commodi
+        ut, repellat cupiditate dignissimos. Doloribus vitae alias dolores doloremque culpa exercitationem dignissimos illum magnam ut fuga! Porro accusantium explicabo, est, odit nam reprehenderit, aliquam expedita esse iusto deleniti commodi nemo. Itaque
+        tenetur distinctio dolore labore quisquam inventore? Quam quod vitae, exercitationem magni dolorum pariatur iste dolores non facilis quas doloribus? Autem ullam blanditiis, aperiam nostrum deserunt veniam, odio quo sapiente architecto sit adipisci,
+        eos ducimus accusantium accusamus et aut possimus cupiditate provident. Cum nobis tenetur voluptatibus ad dicta? Doloremque voluptates quisquam beatae mollitia aliquid obcaecati aspernatur similique! Numquam cupiditate quis odit ipsam placeat
+        aut, maxime, laborum eveniet officiis, iusto iure labore? Non!
+    </p>
+
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            $("#slidetoggle").click(function() {
+                $("#panel").slideToggle(3000);
+            })
+
+            $("#stop").click(function() {
+                $("#panel").stop();
+            });
+        })
+    </script>
+</body>
+
+</html>

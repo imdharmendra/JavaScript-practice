@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="btn1">Hide</button>
+    <button id="btn2">Show </button>
+    <button id="btn3">Toggle</button>
+
+
+    <hr>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, in optio. Mollitia at dignissimos expedita distinctio, excepturi placeat blanditiis voluptatum voluptate quis quaerat reprehenderit. Maiores provident labore ullam ea delectus, non adipisci
+        deserunt, dignissimos, velit eum sapiente? Impedit, laudantium blanditiis.</p>
+    <hr>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error a ratione ut at nisi beatae sequi illum accusantium sint quisquam? Quos nostrum eaque quod deleniti. Dicta vel odio corrupti harum hic voluptate rem doloribus beatae, excepturi, similique
+        debitis. Dignissimos, architecto!
+    </p>
+    <hr>
+    <script src="jquery-3.7.1.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+
+            $("#btn1").click(function() {
+                $("p").hide();
+            });
+
+
+            $("#btn2").click(function() {
+                $("p").show();
+            });
+
+
+            $("#btn3").click(function() {
+                $("p").toggle();
+            })
+
+        })
+    </script>
+
+</body>
+
+</html>

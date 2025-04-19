@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div1 {
+            background-color: tomato;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="btn1">Animation</button>
+    <button id="btn2">Animation 2</button>
+    <button id="btn3">Animation 3</button>
+
+
+    <div id="div1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam asperiores modi quod tempora eveniet aspernatur ratione officia aliquam non, hic perspiciatis tempore assumenda, ducimus optio laudantium. Explicabo accusamus quibusdam modi fugit possimus
+        consectetur ipsam voluptatibus magni, ratione culpa debitis fugiat quas tempore recusandae? Nesciunt labore veritatis nam vel id laudantium repellendus explicabo modi maxime recusandae mollitia, in perferendis? Voluptate laborum cupiditate fuga
+        blanditiis possimus, sunt, dolor consequuntur fugiat veritatis dolorum eaque culpa, eius molestias provident aperiam consectetur magnam ab iure hic unde eos tenetur aut animi? Cum omnis labore maxime beatae sapiente quidem possimus, earum deleniti
+        dolorem repudiandae est placeat.</div>
+
+
+    <script src="jquery-3.7.1.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+
+            $("#btn1").click(function() {
+                $("#div1").animate({
+                    width: '250px'
+                });
+            });
+
+
+            $("#btn2").click(function() {
+                $("#div1").animate({
+                    opacity: '0.5',
+                    height: '50%',
+                    width: '50%'
+                });
+            });
+
+
+            $("#btn3").click(function() {
+                $("#div1").animate({
+                    height: 'toggle'
+                });
+            })
+        })
+    </script>
+</body>
+
+</html>

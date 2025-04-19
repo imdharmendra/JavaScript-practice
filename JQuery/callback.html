@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="hide">hide</button>
+    <p id="div">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint tempora consequuntur cum asperiores. Neque possimus tempora dolor illo. Laborum odit eius impedit voluptatum, molestiae voluptate, molestias rerum id nesciunt qui dolorem ex eveniet cumque
+        veniam corrupti natus amet tenetur perferendis voluptatibus aliquam nemo numquam officiis recusandae. Ea vel obcaecati beatae nostrum, tenetur, eos dolorum atque possimus neque magni voluptatibus in aliquid necessitatibus deserunt provident, quibusdam
+        excepturi? Rerum architecto impedit animi minima vel tenetur veritatis velit dolor sapiente, repudiandae enim? Voluptatibus hic magnam dicta voluptatum ipsam voluptate dolore? Incidunt sint vero magnam. Magnam eaque neque id facilis minus exercitationem
+        unde dicta labore voluptate doloremque explicabo architecto praesentium, recusandae quaerat dignissimos ullam cupiditate nemo sequi optio adipisci saepe maiores nihil reiciendis enim. Sequi autem reiciendis at obcaecati ullam exercitationem? Vero
+        ab, tempora, nihil quos ad labore porro autem culpa amet, minus sed! Eos, quae sed excepturi beatae iure cum expedita voluptatem asperiores voluptatum nulla! Nesciunt quod eveniet assumenda excepturi quas pariatur unde, dignissimos aspernatur
+        debitis. Blanditiis explicabo natus mollitia delectus veritatis! Provident eius, ex quo nam sequi eveniet at, ratione nostrum facilis veritatis soluta impedit officia sunt aliquid dolore harum, eaque officiis! Soluta rerum amet aliquam quo reiciendis
+        non reprehenderit quisquam atque!</p>
+
+    <script src="jquery-3.7.1.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+
+            $("#hide").click(function() {
+                $("#div").hide("slow", function() {
+                    alert("this paragraph is hide.");
+                });
+            })
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="html">Show HTML</button>
+    <button id="text">Show Text</button>
+    <button id="val">Show Val</button>
+    <button id="href">Show href Value</button>
+
+    <p id="para">This is a <b>line</b> of code.<input type="text" id="test" value="code"></p>
+    <p>
+        <a href="https://www.w3schools.com" id="w3s">w3school.com</a>
+    </p>
+
+    <script src="jquery-3.7.1.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+
+            $("#html").click(function() {
+                alert("HTML :" + $("#para").html());
+            });
+
+            $("#text").click(function() {
+                alert("TEXT :" + $("#para").text());
+            });
+
+            $("#val").click(function() {
+                alert("Value: " + $("#test").val());
+            });
+
+            $("#href").click(function() {
+                alert($("#w3s").attr("href"))
+            });
+
+        })
+    </script>
+</body>
+
+</html>

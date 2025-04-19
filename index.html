@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .head {
+            padding: 2% 5%;
+            background-color: #404040;
+        }
+        
+        .head ul {
+            display: flex;
+            gap: 20px;
+            justify-content: end;
+        }
+        
+        .head ul li {
+            list-style: none;
+            color: white;
+            text-transform: capitalize;
+        }
+        
+        #login {
+            width: 30%;
+            height: 300px;
+            background-color: wheat;
+            margin: auto;
+            display: none;
+        }
+        
+        #reg {
+            width: 30%;
+            height: 300px;
+            background-color: wheat;
+            margin: auto;
+            display: none;
+        }
+        
+        input {
+            display: block;
+            padding: 2%;
+            width: 96%;
+            margin: 1vh auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="head">
+        <ul>
+            <li onclick="user(1)">login</li>
+            <li onclick="user(2)">register</li>
+        </ul>
+    </div>
+
+    <div id="login">
+        <form>
+            <h1>Login Page</h1>
+            <p><input type="email" placeholder="Enter Email ID"></p>
+            <p><input type="password" placeholder="Enter Password"></p>
+            <p><input type="submit" value="Login"></p>
+        </form>
+    </div>
+
+    <div id="reg">
+        <form>
+            <h1>Register Page</h1>
+            <h1><input type="text" placeholder="Enter Your Name"></h1>
+            <p><input type="email" placeholder="Enter Email ID"></p>
+            <p><input type="password" placeholder="Enter Password"></p>
+            <p><input type="submit" value="Register"></p>
+        </form>
+    </div>
+
+
+    <script>
+        function user(temp) {
+            if (temp == 1) {
+                document.getElementById(login).style.display = 'block';
+                document.getElementById(reg).style.display = 'none';
+            } else if (temp == 2) {
+                document.getElementById(login).style.display = 'none';
+                document.getElementById(reg).style.display = 'block';
+            }
+        }
+    </script>
+
+</body>
+
+</html>
+
+</html>

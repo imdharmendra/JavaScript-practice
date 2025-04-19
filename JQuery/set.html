@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="test1">This is a paragraph</p>
+    <p id="test2">This is another paragraph</p>
+    <p>Input Field: <input type="text" id="test3" value="Start"></p>
+    <p><a href="https://www.w3schools.com" id="w3s">W3Schools.com</a></p>
+
+
+    <button id="btn1">Set text</button>
+    <button id="btn2">Set Html</button>
+    <button id="btn3">Set Value</button>
+    <button id="btn4">change href</button>
+
+
+
+    <script src="jquery-3.7.1.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $("#btn1").click(function() {
+                $("#test1").text("Hello World");
+            });
+
+            $("#btn2").click(function() {
+                $("#test2").html("<b>Hello World!</b>")
+            });
+
+            $("#btn3").click(function() {
+                $("#test3").val("Dolly Duck");
+            });
+
+            $("#btn4").click(function() {
+                $("#w3s").attr("href", "https://www.w3schools.com/jquery/")
+            })
+        })
+    </script>
+</body>
+
+</html>
+
+</html>
